@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="B">
+    <button id="but1">Kliko</button>
+
+		<p id="p1">Shkolla Digjitale</p>
+		<p id='p2'></p>
+		<script>
+			//Kur e klikojme butonin nje tekst na del ne paragrafin qe i kemi treguar
+			document.getElementById("but1").addEventListener("click", 
+                            function()
+                            {
+                                var x = document.getElementById('p1')
+			                     document.getElementById("p2").innerHTML = "Urime "+x.innerHTML;
+			                 });
+		</script>
+        <br><br>
+        <p id="p3">Shkolla Digjitale</p>
+        <button onclick="ndrroje()">Ndrysho ngjyren</button>
+        <button onclick="rrite()">Rrite madhesine</button>
+        <script>
+              function ndrroje()
+        {
+            document.getElementById('p3').style.color='red';
+        }
+        function rrite()
+        {
+            document.getElementById('p3').style='font-size: 45px; color: red';
+        }
+        </script>
+        <br><br>
+        <button onclick="para()">Ndrysho ngjyren</button>
+        <button onclick="pas()">Ktheje</button>
+        <script>
+            function para()
+        {
+            document.getElementById('B').style.background='red';
+        }
+        function pas()
+        {
+            document.getElementById('B').style.background='white';
+        }
+        </script>
+        <br><br>
+        <p id="parag">Prizren</p>
+        <button onclick="ndrroje()">Ndrysho</button>
+        <script>
+            function ndrroje()
+        {
+            document.getElementById('parag').style='font-size: 45px; color: red';
+        }
+        </script>
+        <br><br>
+        <p ondblclick="kliko(this)" onclick="kliko2(this)">Prizren</p>
+        <script>
+            function kliko(para)
+            {
+                para.innerHTML='Click';
+            }
+            function kliko2(pas)
+            {
+                pas.innerHTML='DblClick';
+            }
+        </script>
+</body>
+</html>

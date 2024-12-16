@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      var x = Math.random();  
+      var a = Math.round(x * 100);
+      document.write(a+"<br>")
+      if(a>=0&&a<=9)
+      {
+        document.write("Numri eshte njeshifror");
+      }
+      else if(a>=10&&a<=99)
+      {
+        document.write("Numri eshte dyshifror");
+      }
+      else
+      {
+        document.write("Numri eshte treshifror");
+      }
+
+    </script>
+    <br><br>
+    <p>Detyra e dyte</p>
+    <p id="p1" style="color: red; font-weight: bold;"></p>
+    <script>
+        var data = new Date();
+        var viti = data.getFullYear();
+        var y;
+        switch(viti)
+{
+    case 2022:
+    y = "Jemi ne vitin 2022";
+    break;
+   
+    case 2023:
+    y = "Jemi ne vitin 2023";
+    break;
+
+    case 2024:
+    y = "Jemi ne vitin 2024";
+    break;
+
+    default:
+    y = "Apocalypse"
+}
+ document.getElementById("p1").innerHTML=y
+    </script>
+    <br><br>
+
+</body>
+</html>
